@@ -1,4 +1,4 @@
-[] -weebs
+- [ ] weebs
      extremely low PR
      high IQ
      horny
