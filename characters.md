@@ -13,6 +13,7 @@
 - [ ] he made graduation
 - [ ] creepy uncle
 - [ ] tate supporter
+- [ ] gym bro
 
      
      
