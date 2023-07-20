@@ -7,6 +7,12 @@
 - [ ] NPC
 - [ ] jeffry epstin
 - [ ] ultraultraextremelysocial
-- [ ] 
+- [ ] ultra conservative
+- [ ] trump supporter
+- [ ] swiftes
+- [ ] he made graduation
+- [ ] creepy uncle
+- [ ] tate supporter
+
      
      
