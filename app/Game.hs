@@ -11,7 +11,6 @@ import Character
 
 -- * Game State & Logs
 
--- | Players
 data Player = Player
   { plChar :: Character
   , plDraw :: [Card]
@@ -23,17 +22,17 @@ data Player = Player
 data Status = Status
   { activePlayers :: [Player]
   , deadPlayers   :: [Player]
-  , nextPlayer    :: Player  -- ^ Next to play a card
+  , nextPlayer    :: Player  -- ^ Next to play.
   } deriving (Show, Eq)
 
--- | Game logs
+-- | Game logs.
 newtype Log = Log Text
 
--- | Game state
+-- | Game state.
 newtype GST a = GST {runGST :: Status -> (a, Status)}
 
 instance Functor GST where
-  fmap f (GST run) = GST  $ \s -> case run s of
+  fmap f aG = GST  $ \s -> case runGST aG s of
     (a, s1) -> (f a, s1)
 
 instance Applicative GST where
