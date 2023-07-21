@@ -26,6 +26,15 @@
 - [ ] creepy uncle
 - [ ] tate supporter
 - [ ] gym bro
-
-     
+- [ ] bloodninja
+  - legendary character
+  - the mightiest sorcerer of the lands 
+  - special attacks 
+    - lvl. 3 eroticism can turn anything into a real beautiful woman
+    - lvl. 8 cock of the infinte
+    - mighty FUCK of the beyondness
+    - lvl. 1,000,000 soul stealing lightning
+  - special defences
+    - lightning shield inflicts DOA attacks
+  - weakness point : Raegan can steal his accomplishments at any time     
      
