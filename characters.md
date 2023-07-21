@@ -6,5 +6,26 @@
 - [ ] whitegirl
 - [ ] NPC
 - [ ] jeffry epstin
+- [ ] ultraultraextremelysocial
+- [ ] ultra conservative
+- [ ] trump supporter
+- [ ] swiftes
+  - negative IQ
+  - no fucking taste in music at all
+  - dumb fucktards
+  - high PR
+  - gets bonuse PR and 10 percent to all attacks if joined with other swiftes
+  - core values "tylor swift is jesus"    
+- [ ] he made graduation
+  - extremely vulnerable to any attack mentioning kanye west
+  - high level of depression
+  - spceail defence "he made graduation", stops any attack mentioning kanye west ,if used
+  - repetative use of "he made graduation" defence or attack risks driving the caster insane
+  - there is always a chance that kanye will say something way worse
+  - core values "the art is not the artist" , "he made garduation ", "kanye is the goat"
+- [ ] creepy uncle
+- [ ] tate supporter
+- [ ] gym bro
+
      
      
