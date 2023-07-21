@@ -33,7 +33,8 @@ newtype Log = Log Text
 newtype GST a = GST {runGST :: Status -> (a, Status)}
 
 instance Functor GST where
-  fmap f (GST run) = GST  $ \s -> case run s of (a, s1) -> (f a, s1)
+  fmap f (GST run) = GST  $ \s -> case run s of
+    (a, s1) -> (f a, s1)
 
 instance Applicative GST where
   pure a  = GST (a, )
