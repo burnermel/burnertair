@@ -2,7 +2,7 @@
   - extremely low PR
   - high IQ
   - horny
-- [ ] dicord mods 
+- [ ] discord mods 
 - [ ] whitegirl
 - [ ] NPC
 - [ ] jeffry epstin
