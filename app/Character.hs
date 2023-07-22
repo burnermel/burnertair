@@ -23,5 +23,5 @@ data Gender = M
 data Character = Character
   { chrName   :: Text
   , chrGender :: Gender
-  , chrTraits :: [Trait]  -- ^ Traits that the character starts the combat with
+  , chrTraits :: [Trait]  -- ^ Traits that the character starts the combat with.
   } deriving (Show, Eq)
