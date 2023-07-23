@@ -4,6 +4,7 @@ module Game where
 
 
 import Data.Text (Text)
+import Data.Map  (Map)
 
 import Card
 import Character
@@ -11,11 +12,44 @@ import Character
 
 -- * Game State & Logs
 
+-- | Game phases.
+data GPhase = InitG
+            | EndG
+              -- ^ Game phases.
+
+            | InitT
+            | EndT
+              -- ^ Turn phases.
+
+            | InitP
+            | EndP
+              -- ^ Player turn phases.
+            deriving (Show, Eq)
+
+data IQ = F
+        | D
+        | C
+        | B
+        | A
+        deriving (Show, Eq, Ord)
+
+data Attitude = Abhor
+              | Hate
+              | Neutral
+              | Friendly
+              | Bestie
+              deriving (Show, Eq, Ord)
+
 data Player = Player
   { plChar :: Character
   , plDraw :: [Card]
   , plDisc :: [Card]
   , plHand :: [Card]
+  , plHP   :: Int
+  , plPR   :: Int
+  , plDEF  :: Int
+  , plIQ   :: IQ
+  , plATT  :: Map Player Attitude
   } deriving (Show, Eq)
 
 -- | Game status
@@ -23,6 +57,7 @@ data Status = Status
   { activePlayers :: [Player]
   , deadPlayers   :: [Player]
   , nextPlayer    :: Player  -- ^ Next to play.
+  , gamePhase     :: GPhase
   } deriving (Show, Eq)
 
 -- | Game logs.

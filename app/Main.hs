@@ -1,9 +1,25 @@
 module Main where
 
+import Control.Monad.Prompt
+
 import qualified Data.Text as T
 
-main :: IO ()
-main = putStrLn "Hello, Haskell!"
+-- | A test for the @prompt@ package.
 
-f :: T.Text
-f = ""
+main :: IO ()
+main = do
+  exec a >>= print
+  exec b >>= print
+  
+
+a :: Prompt String String (Maybe String)
+a = Just
+  <$> prompt "String:"
+
+exec :: Prompt String String (Maybe String) -> IO (Maybe String)
+exec = flip runPromptM $ \str -> putStrLn str >> getLine
+
+b = do
+  a
+  a
+  a
