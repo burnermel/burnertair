@@ -35,9 +35,34 @@
 - [ ] In each phase (`initTurn`, `endTurn`, etc.), use helper functions that check for traits.
   - Alternatively, store a list of effects that apply at specific turn phases.
 - Look into **Monad Transformers** and **Effect Libraries** for a way to separate pure and effectful parts of `GST`.
+  - Use the `prompt` package
 - Use better data types:
   - Replace lists by other containers.
+  - Use `Word8`, `Int16`, etc., or custom data types instead of `Int` for stats.
 
 ### Documentation:
 - Everything should be well-documented in Haddock syntax.
 - Avoid adding temporary comments and TODOs in the source file; use this file instead.
+
+### Project Hierarchy:
+- [x] Main: initiates the app.
+- [x] Game: specifies game mechanics with `prompt`.
+  - [x] Data: exports the database of characters, traits, cards, etc.
+    - [x] Characters
+	- [x] Cards
+	- [x] Effects
+	- [x] Traits
+  - [x] State: game state.
+    - [x] Lens: setters and getters for `GState` used to define effects.
+  - [x] Player: `PStats` and `mkPlayer`.
+  - [x] Card
+    - [x] Graphics: exports a specific graphical representation of cards.
+	  - [x] Text
+	  - [x] ASCII
+	  - [x] Image
+  - [x] Effect: to be used in both `Card` and `Character.Trait`. An `Effect` is a `GState` lens.
+  - [x] Character
+    - [x] Trait
+  - [x] IO: exports a certain IO for the game.
+    - [x] Text
+	- [x] GUI
